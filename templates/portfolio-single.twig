@@ -31,14 +31,14 @@
     
     
     <div class="nk-header-content">
-        {#<div class="nk-header-content-inner">#}
+        <div class="nk-header-content-inner">
             {#<div class="container">#}
                     {#<div class="nk-header-text text-white">#}
 {#<div class="nk-subtitle-2 mb-5">{{ completion_date }}</div>#}
 {#<h1 class="nk-title text-uppercase text-white">{{ label }}</h1>#}
                     {#</div>#}
             {#</div>#}
-        {#</div>#}
+        </div>
     </div>
     
     
@@ -113,28 +113,44 @@
             <div class="nk-portfolio-single">
 
                 <div class="nk-gap-3"></div>
+
                 <div class="row vertical-gap">
                     <div class="col-lg-5 offset-lg-1">
                         <div class="nk-portfolio-info">
+                            <div class="nk-portfolio-text h2 lh-30">
+                                {{ label }}
+                            </div>
+
+                            <div class="nk-gap"></div>
+
                             <div class="nk-portfolio-text h6 lh-25">
                                 {{ description | raw }}
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 offset-lg-1">
-                        <table class="nk-portfolio-details">
-                            <tr>
-                                <td><strong>Project:</strong></td>
-                                <td>{{ label }}</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Address:</strong></td>
-                                <td>{{ address }}</td>
-                            </tr>
-                            <tr>
-                                <td><strong>{{ current_project ? 'Due for completion:' : 'Completed:' }}</strong></td>
-                                <td>{{ completion_date }}</td>
-                            </tr>
+                        <div class="nk-portfolio-info">
+                            <div class="nk-portfolio-text text-black h7 lh-25">
+                                {{ address }}
+                            </div>
+
+                            <div class="nk-portfolio-text text-black h7 lh-25">
+                                {{ current_project ? 'Due for completion:' : 'Completed:' }} {{ completion_date }}
+                            </div>
+
+                        {#<table class="nk-portfolio-details">#}
+                            {#<tr>#}
+                                {#<td><strong>Project:</strong></td>#}
+                                {#<td>{{ label }}</td>#}
+                            {#</tr>#}
+                            {#<tr>#}
+                                {#<td><strong>Address:</strong></td>#}
+                                {#<td>{{ address }}</td>#}
+                            {#</tr>#}
+                            {#<tr>#}
+                                {#<td><strong>{{ current_project ? 'Due for completion:' : 'Completed:' }}</strong></td>#}
+                                {#<td>{{ completion_date }}</td>#}
+                            {#</tr>#}
                             {#<tr>#}
                                 {#<td><strong>Share:</strong></td>#}
                                 {#<td class="nk-post-share">#}
@@ -148,7 +164,8 @@
                                     {#-->#}
                                 {#</td>#}
                             {#</tr>#}
-                        </table>
+                        {#</table>#}
+                        </div>
                     </div>
                 </div>
                 <div class="nk-gap-5"></div>
