@@ -1,6 +1,21 @@
 <?php
 
 $portfolio = [
+    'waterman-mews' => [
+        'current_project' => true,
+        'completion_date' => 'September 2019',
+        'address' => 'Reading Road, Henley-on-Thames.',
+        'description' =>
+            '<p>An exclusive development of traditional Mews style properties situated off the Reading Road, within walking distance to the town centre, train station and river, also within the highly regarded Trinity School catchment area.</p>'
+    ],
+    'berkshire-road' => [
+        'completion_date' => '2019',
+        'address' => 'Berkshire Road, Henley-on-Thames.',
+        'description' =>
+            '<p>Set in one of the most desirable locations, within walking distance of the Centre of Henley-on-Thames is this bespoke development, comprising a pair of semi-detached and one detached family homes.</p>'
+            . '<p>Designed to suit the surrounding area in a Victorian style, incorporating many feature synonymous with a Jamie Smith Estates property. Each dwelling has been created to meet the needs of modern lifestyles with open plan kitchen / living / dining space and separate formal Drawing room.</p>'
+            . '<p>The properties will be provided with off road parking and West facing rear gardens.</p>'
+    ],
     'hickman-and-hayman-house' => [
         'completion_date' => '2017',
         'address' => 'St Andrews Road, Henley-on-Thames.',
@@ -54,21 +69,6 @@ $portfolio = [
     'the-pines' => [
         'completion_date' => '??',
         'address' => '??',
-        'description' =>
-            '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan ligula sed suscipit pellentesque. Aliquam erat volutpat. Quisque ut accumsan erat. Curabitur faucibus commodo bibendum. Vestibulum id euismod odio. Proin a tempor quam. </p>'
-            . '<p>Cras tincidunt, purus vel congue dapibus, dolor nibh vestibulum lorem, vitae accumsan nunc turpis id tortor. Integer molestie egestas felis, et ornare diam tempus sed. Curabitur at ornare leo. Nulla facilisi.</p>'
-    ],
-    'berkshire-road' => [
-        'completion_date' => '??',
-        'address' => 'Berkshire Road, Henley-on-Thames.',
-        'description' =>
-            '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan ligula sed suscipit pellentesque. Aliquam erat volutpat. Quisque ut accumsan erat. Curabitur faucibus commodo bibendum. Vestibulum id euismod odio. Proin a tempor quam. </p>'
-            . '<p>Cras tincidunt, purus vel congue dapibus, dolor nibh vestibulum lorem, vitae accumsan nunc turpis id tortor. Integer molestie egestas felis, et ornare diam tempus sed. Curabitur at ornare leo. Nulla facilisi.</p>'
-    ],
-    'reading-road' => [
-        'current_project' => true,
-        'completion_date' => 'September 2019',
-        'address' => 'Reading Road, Henley-on-Thames.',
         'description' =>
             '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan ligula sed suscipit pellentesque. Aliquam erat volutpat. Quisque ut accumsan erat. Curabitur faucibus commodo bibendum. Vestibulum id euismod odio. Proin a tempor quam. </p>'
             . '<p>Cras tincidunt, purus vel congue dapibus, dolor nibh vestibulum lorem, vitae accumsan nunc turpis id tortor. Integer molestie egestas felis, et ornare diam tempus sed. Curabitur at ornare leo. Nulla facilisi.</p>'
