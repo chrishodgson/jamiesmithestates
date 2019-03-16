@@ -15,14 +15,14 @@ class Ajax_Contact_Form {
      *
      * @var string
      */
-    protected $address_destination = 'hello@chrishodgsonweb.co.uk';
+    protected $address_destination = 'info@jamiesmithestates.com';
 
     /**
      * Message subject
      *
      * @var string
      */
-    protected $message_subject = 'Message from AJAX Contact Form';
+    protected $message_subject = 'JSE Contact Form';
 
     /**
      * Strings to translate or change it.
